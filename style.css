@@ -37,13 +37,12 @@ h1 {
     color: black;
     font-size: larger;
     text-align: center;
-   background-image: url(aboutuscover.jpg);
+   background-image: url("aboutuscover.jpg");
    background-size: cover;
    background-attachment: fixed;
 
 }
 .meettheteam{
-    text-align: center;
     display: flex;
     justify-content: space-around;
 }
@@ -51,14 +50,17 @@ h2 {
     text-align: center;
     padding: 20px;
 }
-.dot{
-    height: 100px;
-    width: 100px;
-    background-color: khaki;
-    border-radius: 50%;
-    display: inline-block;
-   }
-
+.circle{
+    border-radius: 100%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+  .circle img{
+    width: 200px;
+    height: 200px;
+}  
 .container {
     margin: 0;
     padding: 0;
