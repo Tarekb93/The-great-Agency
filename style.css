@@ -6,7 +6,6 @@ header {
     justify-content: space-around;
     padding: 0;
     height: 50px;
-    
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -17,7 +16,7 @@ header a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    
     text-decoration: none;
     font-size: 17px;
   }
@@ -85,10 +84,7 @@ li, a {
     display: flex;
     align-items: center;
 }
-.contact_button {
-    height: 30px;
-    width: 90px;
-}
+
 
 /* Form styling */
 .contact_form {
@@ -112,15 +108,17 @@ li, a {
 
 @media screen and (max-width: 500px) {
     .nav_links {
-      float:none;
-      margin:0 auto;
-      display: block;
+      float: right;
+      margin: 0;
+      display: flex;
+      vertical-align: auto;
       position: absolute;
    }
 
 .nav_links > li {
+    float: right;
      display: flex;
-     justify-content: space-between;;
+     vertical-align: auto;
      float: none;
      position: absolute;
   }
