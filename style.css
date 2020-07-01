@@ -45,7 +45,7 @@ h1 {
 .meettheteam{
     display: flex;
     justify-content: space-around;
-}
+    }
 h2 {
     text-align: center;
     padding: 20px;
@@ -61,6 +61,16 @@ h2 {
     width: 200px;
     height: 200px;
 }  
+
+.labels{
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: initial;
+    display: flex;
+    }
+.labels p {
+    border-style: groove;
+    }
 .container {
     margin: 0;
     padding: 0;
