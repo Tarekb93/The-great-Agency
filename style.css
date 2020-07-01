@@ -1,23 +1,35 @@
+/* The navigation Bar */
 header {
-    background-color: white;
+    background-color: 000E22;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     height: 50px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
+/* Main content */
+main {
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+  }
+  
 .container {
     margin: 0;
     padding: 0;
 }
-nav{
+
+/* The navigation links */
+nav {
     /* Width and height apply to all parts of the element: content, padding and borders */
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
+    
 }
 li, a {
-    color: black;
+    color: white;
     text-decoration: none;  /* removes the underline hyperl */
 }
 
@@ -31,8 +43,12 @@ li, a {
 .logo {
     cursor: pointer;
     max-width: 90px;
-    max-height: 20px;
+    max-height: 40px;
 }
+body {
+    background-image: url("workout.jpg");
+   }
+   
 /*centers all items vertically */
 .wrap {
     display: flex;
