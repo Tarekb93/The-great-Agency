@@ -29,7 +29,7 @@ header a {
 
 /* Main content */
 body {
-    margin-top: 50px; /* Add a top margin to avoid content overlay */
+    margin: 0px;
   }
 h1 {
     color: white;
@@ -75,7 +75,11 @@ li, a {
     height: 570px;
     margin-top: -50px;
 } 
-
+.heading1{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+} 
 /*centers all items vertically */
 .wrap {
     display: flex;
@@ -105,21 +109,29 @@ li, a {
 }
 
 
-/* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 500px) {
+    .nav_links {
+      float:none;
+      margin:0 auto;
+      display: block;
+      position: absolute;
+   }
+
+.nav_links > li {
+     display: flex;
+     justify-content: space-between;;
+     float: none;
+     position: absolute;
+  }
+}
+
+/* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
 @media screen and (max-width: 400px) {
-    .topnav a:not(:first-child) {display: none;}
+    .nav_links li a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
-    }
-  }
-/*
-@media only screen and (max-width: 400px) {
-    header {
-      background-color: red;
-    }
-    .logo{
-        display: none;
     }
   }
 */
