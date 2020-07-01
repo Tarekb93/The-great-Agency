@@ -1,25 +1,74 @@
 /* The navigation Bar */
 header {
-    background-color: 000E22;
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 0;
     height: 50px;
+    
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
-/* Main content */
-main {
-    margin-top: 50px; /* Add a top margin to avoid content overlay */
+
+header a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
   
+  header a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+/* Main content */
+body {
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+  }
+h1 {
+    color: white;
+}
+.about {
+    color: black;
+    font-size: larger;
+    text-align: center;
+   background-image: url(aboutuscover.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+.meettheteam{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+.dot{
+    height: 100px;
+    width: 100px;
+    background-color: khaki;
+    border-radius: 50%;
+    display: inline-block;
+   }
+
 .container {
     margin: 0;
     padding: 0;
 }
-
+.logotext {
+    color: white;
+    display: flex;
+    align-items: center;
+}
 /* The navigation links */
 nav {
     /* Width and height apply to all parts of the element: content, padding and borders */
@@ -45,10 +94,13 @@ li, a {
     max-width: 90px;
     max-height: 40px;
 }
-body {
-    background-image: url("workout.jpg");
-   }
-   
+.background_img {
+    background: url("workout.jpg") no-repeat center center;
+    background-size: cover;
+    height: 570px;
+    margin-top: -50px;
+} 
+
 /*centers all items vertically */
 .wrap {
     display: flex;
@@ -60,6 +112,10 @@ body {
 }
 
 /* Form styling */
+.contact_form {
+    background-color: color;
+    color: white;
+}
 #mail{
     margin-right: 25px;
 }
