@@ -45,11 +45,12 @@ h1 {
 
 }
 .meettheteam{
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
+    
 }
 .centerCircles {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
 
 }
 h2 {
