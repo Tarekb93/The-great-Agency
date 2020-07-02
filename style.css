@@ -67,6 +67,7 @@ h2 {
     }
 .labels p {
     border-style: groove;
+    word-wrap: normal;
     }
 .container {
     margin: 0;
