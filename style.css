@@ -6,10 +6,11 @@ header {
     justify-content: space-around;
     padding: 0;
     height: 50px;
-    
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    align-items: center;
+    background-color: #000217;
 }
 
 header a {
@@ -17,7 +18,7 @@ header a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    
     text-decoration: none;
     font-size: 17px;
   }
@@ -35,30 +36,49 @@ h1 {
     color: white;
 }
 .about {
-    color: black;
+    color: #4C7579;
     font-size: larger;
     text-align: center;
-   background-image: url(aboutuscover.jpg);
+   background-image: url("aboutuscover.jpg");
    background-size: cover;
    background-attachment: fixed;
 
 }
 .meettheteam{
-    text-align: center;
     display: flex;
     justify-content: space-around;
-    }
+}
+.centerCircles {
+    display: inline-block;
+
+}
 h2 {
     text-align: center;
     padding: 20px;
 }
-.dot{
-    height: 100px;
-    width: 100px;
-    background-color: khaki;
-    border-radius: 50%;
-    display: inline-block;
-   }
+.circle{
+    border-radius: 100%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+}
+  .circle img{
+    width: 200px;
+    height: 200px;
+}  
+/*
+.col-30 {
+    float: left;
+    width: 33%;
+    text-align: center;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .labels{
     justify-content: space-around;
     text-align: center;
@@ -68,7 +88,9 @@ h2 {
 .labels p {
     border-style: groove;
     word-wrap: normal;
+
     }
+*/
 .container {
     margin: 0;
     padding: 0;
@@ -109,20 +131,17 @@ li, a {
     height: 570px;
     margin-top: -50px;
 } 
-.heading1{
+.heading1 {
     display: flex;
     justify-content: center;
     padding-top: 300px;
 } 
+
 /*centers all items vertically */
 .wrap {
-    display: flex;
-    align-items: center;
+    
 }
-.contact_button {
-    height: 30px;
-    width: 90px;
-}
+
 
 /* Form styling */
 .contact_form {
@@ -145,20 +164,21 @@ li, a {
 /* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+    .header {
+        display: none;
+    }
+    .logotext {
+        display: flex;
+    }
     .nav_links {
-      float:none;
-      margin:0 auto;
-      display: block;
-      position: absolute;
+      display: none;
    }
-
-.nav_links > li {
-     display: flex;
-     justify-content: space-between;;
-     float: none;
-     position: absolute;
-  }
+   .centerCircles {
+      justify-content: center;
+      
+   }
+   
 }
 
 /* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
