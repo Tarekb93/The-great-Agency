@@ -9,6 +9,8 @@ header {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    align-items: center;
+    background-color: #000217;
 }
 
 header a {
@@ -34,7 +36,7 @@ h1 {
     color: white;
 }
 .about {
-    color: black;
+    color: #4C7579;
     font-size: larger;
     text-align: center;
    background-image: url("aboutuscover.jpg");
@@ -45,7 +47,11 @@ h1 {
 .meettheteam{
     display: flex;
     justify-content: space-around;
-    }
+}
+.centerCircles {
+    display: inline-block;
+
+}
 h2 {
     text-align: center;
     padding: 20px;
@@ -56,12 +62,23 @@ h2 {
     width: 200px;
     height: 200px;
     overflow: hidden;
+    margin: 10px;
 }
   .circle img{
     width: 200px;
     height: 200px;
 }  
-
+/*
+.col-30 {
+    float: left;
+    width: 33%;
+    text-align: center;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .labels{
     justify-content: space-around;
     text-align: center;
@@ -69,8 +86,9 @@ h2 {
     display: flex;
     }
 .labels p {
-    border-style: groove;
+
     }
+*/
 .container {
     margin: 0;
     padding: 0;
@@ -111,15 +129,15 @@ li, a {
     height: 570px;
     margin-top: -50px;
 } 
-.heading1{
+.heading1 {
     display: flex;
     justify-content: center;
     padding-top: 300px;
 } 
+
 /*centers all items vertically */
 .wrap {
-    display: flex;
-    align-items: center;
+    
 }
 
 
@@ -144,22 +162,21 @@ li, a {
 /* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+    .header {
+        display: none;
+    }
+    .logotext {
+        display: flex;
+    }
     .nav_links {
-      float: right;
-      margin: 0;
-      display: flex;
-      vertical-align: auto;
-      position: absolute;
+      display: none;
    }
-
-.nav_links > li {
-    float: right;
-     display: flex;
-     vertical-align: auto;
-     float: none;
-     position: absolute;
-  }
+   .centerCircles {
+      justify-content: center;
+      
+   }
+   
 }
 
 /* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
